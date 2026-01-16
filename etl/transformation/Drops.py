@@ -10,4 +10,14 @@ def drop_columns(data):
         return data
     except Exception as e:
         print(f"Erro to remove columns: {e}")
+        
+
+
+
+def drop_duplicates(data):
+    try:
+        data = data.drop_duplicates(keep='first')
         return data
+    except Exception as e:
+        print(f"Erro to remove columns: {e}")
+        
