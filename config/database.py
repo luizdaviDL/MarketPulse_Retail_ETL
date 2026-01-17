@@ -18,4 +18,7 @@ def get_db_engine():
         return None
     
 def get_table_name(): 
-    return os.getenv('DB_TABLE', 'marketpulse_retail')  # default    
+    return os.getenv('DB_NAME', 'marketpulse_retail')  # default    
+
+def table_pareto_top_20(): 
+    return os.getenv('DB_PARETO_NAME', 'top_20_porcent_amount')  # default   
